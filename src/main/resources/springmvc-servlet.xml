@@ -116,6 +116,7 @@
         </property>
     </bean>
 
+
     <!-- 注册验证器 -->
     <mvc:annotation-driven validator="validator"/>
 
