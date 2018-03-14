@@ -1,4 +1,4 @@
-package com.jy.dingding.wangba.bean;
+package com.jy.rental.entity;
 
 import java.util.Date;
 import javax.persistence.*;

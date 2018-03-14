@@ -1,6 +1,6 @@
-package com.jy.dingding.wangba.dao;
+package com.jy.rental.persistence;
 
-import com.jy.dingding.wangba.bean.WechatTokenEntity;
+import com.jy.rental.entity.WechatTokenEntity;
 import tk.mybatis.mapper.common.Mapper;
 
 public interface WechatTokenEntityMapper extends Mapper<WechatTokenEntity> {
