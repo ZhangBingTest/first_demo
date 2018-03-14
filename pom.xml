@@ -406,12 +406,12 @@
       <id>rental-dev</id>
       <properties>
         <!--数据库配置-->
-        <jdbc.url>jdbc:mysql://127.0.0.1:3306/rental_dev?autoReconnect=true<![CDATA[&amp;]]>
+        <jdbc.url>jdbc:mysql://116.62.129.210:3306/rental_dev?autoReconnect=true<![CDATA[&amp;]]>
           characterEncoding=UTF-8
         </jdbc.url>
         <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
         <jdbc.username>root</jdbc.username>
-        <jdbc.password>dsJ92fds</jdbc.password>
+        <jdbc.password>dsJ92fds@Dsak38Y^Gfddss#k</jdbc.password>
         <modelType>3</modelType>
         <nginx.ip.host>http://127.0.0.1:8787/</nginx.ip.host>
         <redis.host>127.0.0.1</redis.host>
