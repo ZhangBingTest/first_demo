@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <properties resource="configs/config.properties"/>
+
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <plugin type="${mapper.plugin}">
+            <property name="mappers" value="${mapper.Mapper}"/>
+        </plugin>
+
+        <jdbcConnection driverClass="${jdbc.driverClass}"
+                        connectionURL="${jdbc.url}"
+                        userId="${jdbc.user}"
+                        password="${jdbc.password}">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="${targetModelPackage}" targetProject="${targetJavaProject}"/>
+
+        <sqlMapGenerator targetPackage="${targetXMLPackage}"  targetProject="${targetJavaProject}"/>
+
+        <javaClientGenerator targetPackage="${targetMapperPackage}" targetProject="${targetJavaProject}" type="XMLMAPPER" />
+
+        <!--<table tableName="%" >  生成所有表
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="pay_agreements" domainObjectName="PayAgreementsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_systems" domainObjectName="WangbaSystemsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="recharge_records" domainObjectName="RechargeRecordsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_gifts" domainObjectName="WangbaGiftsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_lotteries" domainObjectName="WangbaLotteriesEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="user_signs" domainObjectName="UserSignsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="test_roles" domainObjectName="TestRolesEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="alipay_account_snaps" domainObjectName="AlipayAccountSnapsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_dictionary" domainObjectName="WangbaDictionarysEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_amount_reports" domainObjectName="WangbaAmountReportsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table schema="${jdbc.user}" tableName="wangba_amount_records" domainObjectName="WangbaAmountRecordsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_reports" domainObjectName="WangbaReportsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_ads" domainObjectName="WangbaAdsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_amount_record_historys" domainObjectName="WangbaAmountRecordHistorysEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_ad_attachments" domainObjectName="WangbaAdAttachmentsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="alipay_users" domainObjectName="AlipayUsersEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="shiro_resources" domainObjectName="ShiroResourcesEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table schema="${jdbc.user}" tableName="shiro_groups" domainObjectName="ShiroGroupsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table schema="${jdbc.user}" tableName="shiro_group_resources" domainObjectName="ShiroGroupResourcesEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table schema="${jdbc.user}" tableName="shiro_group_users" domainObjectName="ShiroGroupUsersEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_pay_discounts" domainObjectName="WangbaPayDiscountsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="recharge_records" domainObjectName="RechargeRecordsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="pays" domainObjectName="PaysEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="alipay_users_randoms" domainObjectName="AlipayUsersRandomsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_shouyins" domainObjectName="WangbaShouyinsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="ding_users" domainObjectName="DingUsersEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_reliefs" domainObjectName="WangbaReliefsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_shift_dictionarys" domainObjectName="WangbaShiftDictionarysEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_activites" domainObjectName="WangbaActivityEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="wangba_activity_settings" domainObjectName="WangbaActivitySettingsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table schema="${jdbc.user}" tableName="wangba_activity_manages" domainObjectName="WangbaActivityManagesEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table schema="${jdbc.user}" tableName="wangba_gift_lottery_roles" domainObjectName="WangbaGiftLotteryRolesEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="uuid_keys" domainObjectName="UuidKeysEntity" >
+            <generatedKey column="uuid" sqlStatement="Mysql" identity="false"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="pay_reports" domainObjectName="PayReportsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="w_user_signs" domainObjectName="WUserSignsEntity" >-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table schema="${jdbc.user}" tableName="coupons" domainObjectName="CouponsEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table schema="${jdbc.user}" tableName="coupons_user" domainObjectName="CouponsUserEntity" >-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table schema="${jdbc.user}" tableName="article_types" domainObjectName="ArticleTypesEntity" >-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table schema="${jdbc.user}" tableName="alipay_accounts" domainObjectName="AlipayAccountsEntity" >-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table schema="${jdbc.user}" tableName="express_informations" domainObjectName="ExpressInformationsEntity" >-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table schema="${jdbc.user}" tableName="delivery_address" domainObjectName="DeliveryAddressEntity" >-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table schema="${jdbc.user}" tableName="w_user_sign_fails" domainObjectName="WUserSignFailsEntity" >-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+        <table schema="${jdbc.user}" tableName="wechat_token" domainObjectName="WechatTokenEntity" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+    </context>
+</generatorConfiguration>
